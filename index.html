@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </header>
+  <body>
+    <div>
+      <form onsubmit="return validateForm()">
+        <div class="input-group"> 
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" class="name">
+          <p class="errormessage"></p>
+        </div>
+        <p class="errorName" style="color:red "></p>
+
+        <div class="input-group">
+          <label>Phone No.</label>
+          <input type="tel" placeholder="123 456 7890" class="phone">
+        </div>
+        <p class="phoneError"></p>
+        
+  
+        <div class="input-group">
+          <label>Email Id</label>
+          <input type="email" placeholder="Enter Email" name="email">
+        </div>   
+        <p class="mailError"></p>
+
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="Password" placeholder="Enter your new password" class="newPassword">
+        </div>
+        <p class="passError"></p>
+
+
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input type="Confirm Password" placeholder="Confirm Password" class="confirmPasswrod">
+        </div>
+        <p class="confirmError"></p>
+
+
+  
+      <button class="submit">Submit</button>
+
+        
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
